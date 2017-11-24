@@ -1,8 +1,6 @@
 from random import randint
 
 # HAS-A Boat
-
-
 class Boat:
     def __init__(self, capacity):
         if capacity > 60:
@@ -11,8 +9,6 @@ class Boat:
         self.capacity = capacity
 
 # HAS-A TreasureChest
-
-
 class TreasureChest:
     def __init__(self):
         self.weight = randint(4, 10)
@@ -24,9 +20,7 @@ class TreasureChest:
         elif content == 3:
             self.content = Illness(randint(3, 10))
 
-#  TreasureChest HAS-A Gold coins/Illness/Null content
-
-
+#  TreasureChest HAS-A Gold Content (Coins/Illness/Null)
 class Content:
     def __init__(self):
         self.amount = 0
